@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: no
+
+- hosts: all
+  gather_facts: no
+  remote_user: root
+  become: yes
+  roles:
+    - nc-common
+    - nc-zabbix
